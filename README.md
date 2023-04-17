@@ -51,26 +51,31 @@ This Python script is an implementation of the Direct Linear Transformation (DLT
 
 ### Example Output
 
-Projection Matrix (P):  
-[[ 0.036223 -0.002215 -0.088324  0.954089]  
-[-0.025383  0.083056 -0.028002  0.268827]  
-[-0.000035 -0.000003 -0.00004   0.001261]]   
+Projection Matrix (P):
 
-Intrinsic Matrix (K):  
-[[1619.01802    -1.89271   800.113193]  
-[   0.       1612.025941  616.150419]  
-[   0.         -0.          1.      ]]   
+ [[ 0.036223 -0.002215 -0.088324  0.954089]
+ [-0.025383  0.083056 -0.028002  0.268827]
+ [-0.000035 -0.000003 -0.00004   0.001261]]
+ 
+Intrinsic Matrix (K):
 
-Rotation Matrix (R):  
-[[ 0.749486  0.00587  -0.661994]  
-[-0.045356  0.998066 -0.0425  ]  
-[-0.660464 -0.061879 -0.748303]]   
+ [[1619.01802    -1.89271   800.113193]
+ [   0.       1612.025941  616.150419]
+ [   0.         -0.          1.      ]]
+ 
+Rotation Matrix (R):
 
-Translation Vector (t):  
-[[-0.000034]  
-[-0.000315]  
-[ 0.001261]] 
+ [[ 0.749486  0.00587  -0.661994]
+ [-0.045356  0.998066 -0.0425  ]
+ [-0.660464 -0.061879 -0.748303]]
+ 
+Translation Vector (t):
 
+ [[-0.648624]
+ [-0.301832]
+ [-0.697519]
+ [-0.040647]]
+ 
 Reprojection Error for Point 1 is: 0.28561276727805496
 Reprojection Error for Point 2 is: 0.9725828452229532
 Reprojection Error for Point 3 is: 1.036081784374865
@@ -93,5 +98,13 @@ This code performs chessboard calibration on a set of images using OpenCV. The c
 2. Update the square_size and pattern_size variables in lines 6-7 to match the dimensions of the calibration target used.
 3. Run the code: problem2.py
 
-## Output
+### Output
 ![Images with corners drawn and reprojection errors](https://github.com/vishnumandala/Camera-Calibration-using-DLT-and-Checkerboard/blob/main/problem2_output.png)
+
+### Example Output
+
+Intrinsic Matrix: 
+
+[[2040.394711    0.        764.587598]
+ [   0.       2032.174674 1359.294911]
+ [   0.          0.          1.      ]]
